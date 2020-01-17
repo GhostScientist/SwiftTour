@@ -58,6 +58,12 @@ if year % 2 == 0 {
     print("The year \(year) is odd!")
 }
 
+// Ternary Statements
+// The ternary operator allows you to run a check and return one of two values depending on the result of that check
+
+let score = 88
+let result = score > 85 ? "Pass" : "Fail"
+
 // Switch statements
 
 let choice = 2
@@ -105,7 +111,7 @@ for x in 0...5 {
 var age = 0
 
 while age < 18 {
-    print("You are \(age)! You can't vote yet!")
+    print("You are \(age) years old! You can't vote yet!")
     age += 1 // increment syntax
 }
 
@@ -117,7 +123,13 @@ func greet(person: String, day: String) -> String {
     return "Hello \(person), today is \(day)."
 }
 
+func helloWorld() {
+    print("Hello, World!")
+}
+
 print(greet(person: "Fred", day: "Friday"))
+
+helloWorld()
 
 // Functions with Multiple returns
 
@@ -169,6 +181,11 @@ print("I am rank: \(rank.simpleDescription())")
 
 // Protocols
 
+// A protocol defines a blueprint of methods, properties, and other requirements that suit
+// a particular task or piece of functionality. The protocol can then be adopted by a class,
+// structure, or enumeration to provide an actual implementation of those requirements.
+// Any type that satisfies the requirements of a protocol is said to conform to that protocol.
+
 protocol Animal {
     var species: String { get }
 }
@@ -183,3 +200,5 @@ class Human: Animal {
         self.height = height
     }
 }
+
+
